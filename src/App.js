@@ -8,7 +8,7 @@ import Calculate from './Logic/Calculate'
 var dis = ""
 function App() {
 
-    const symbols = ['+','-','/','*',%]
+    const symbols = ['+','-','/','*','%']
     let [state,setState] = useState('')
     let a = '';
     let b = '';
@@ -25,7 +25,7 @@ function App() {
         state = dis
         setState(state);
         console.log(dis)
-        if (buttonName in symbols){
+       /* if (buttonName in symbols){
 
             if(a==''){
                 a = dis;
@@ -39,7 +39,7 @@ function App() {
 
             }
 
-        }
+        }*/
 
 
     };
