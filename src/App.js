@@ -8,7 +8,7 @@ import Calculate from './Logic/Calculate'
 var dis = ""
 function App() {
 
-    const symbols = ['+','-','/','*','%']
+   // const symbols = ['+','-','/','*','%']
     let [state,setState] = useState('')
     let a = '';
     let b = '';
