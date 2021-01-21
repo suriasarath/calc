@@ -1,13 +1,11 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Button from './Button'
 import './ButtonFrame.css'
 
 
 
 class ButtonFrame extends React.Component{
-    constructor(props) {
-        super(props);
-    }
+   
     handleClick=buttonName=>{
         this.props.clickHandler(buttonName);
     };

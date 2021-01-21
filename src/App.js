@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
 import ButtonFrame from "./Components/ButtonFrame";
-import Button from "./Components/Button";
 import Display from "./Components/Display"
-import react, {useState} from 'react'
+import {useState} from 'react'
 import Calculate from './Logic/Calculate'
+
 var dis = ""
 function App() {
 
+
    // const symbols = ['+','-','/','*','%']
     let [state,setState] = useState('')
-    let a = '';
-    let b = '';
-    let action = false;
-    let symbol = '';
+    state = {
+          a:null,
+          b:null,
+          c:null
+        }
+    
+  
+    
     const handleClick=buttonName=>{
         console.log(buttonName);
         console.log(Calculate('6','7','+'));
-        if(buttonName=='AC') {
+        if(buttonName==='AC') {
             dis = '';
             buttonName = '';
         }
