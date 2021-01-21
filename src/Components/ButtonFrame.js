@@ -34,7 +34,7 @@ class ButtonFrame extends React.Component{
                 <Button name = '7' clickHandler={this.handleClick}>></Button>
                 <Button name = '8' clickHandler={this.handleClick}>></Button>
                 <Button name = '9' clickHandler={this.handleClick}>></Button>
-                <Button name = '*' clickHandler={this.handleClick}>></Button>
+                <Button name = 'x' clickHandler={this.handleClick}>></Button>
             </div>
             <div>
                 <Button name = '0' clickHandler={this.handleClick}>></Button>

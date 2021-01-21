@@ -4,30 +4,36 @@ import ButtonFrame from "./Components/ButtonFrame";
 import Display from "./Components/Display"
 import {useState} from 'react'
 import Calculate from './Logic/Calculate'
-
+let calc_object = {
+  first:null,
+  second:null,
+  operation:null,
+ };
 var dis = ""
 function App() {
 
-    let calc_object = {
-      first:null,
-      second:null,
-      operation:null };
+    
 
    // const symbols = ['+','-','/','*','%']
-   calc_object.first = '0'
+   
     let [state,setState] = useState('');
   
     const handleClick=buttonName=>{
-        console.log(buttonName);
-        console.log(Calculate('6','7','+'));
+        
+        //console.log(Calculate('6','7','+'));
         if(buttonName==='AC') {
             dis = '';
             buttonName = '';
+            calc_object = {
+              first:"",
+              second:"",
+              operation:"" };
         }
         dis += buttonName.toString();
         state = dis
         setState(dis);
-        console.log(dis)
+        state = Calculate(calc_object,buttonName);
+        setState(state.first+state.operation+state.second);
        /* if (buttonName in symbols){
 
             if(a==''){
