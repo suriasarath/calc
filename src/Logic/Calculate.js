@@ -36,7 +36,6 @@ function operate(calc_object){
 }
 
 function Calculate(calc_object,buttonName){
-    let a,b,s = 0
     
 
     if(buttonName==='AC'){
@@ -89,26 +88,6 @@ function Calculate(calc_object,buttonName){
 
         }
 
-    }
-
-
-    
-
-    if(s==='+'){
-
-        return(parseInt(a)+parseInt(b));
-    }
-    if(s==='-'){
-
-        return(parseInt(a)-parseInt(b));
-    }
-    if(s==='x'){
-
-        return(parseInt(a)*parseInt(b));
-    }
-    if (s==='/'){
-
-        return(parseInt(a)/parseInt(b));
     }
 
 
