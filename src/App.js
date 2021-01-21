@@ -8,17 +8,15 @@ import Calculate from './Logic/Calculate'
 var dis = ""
 function App() {
 
+    let calc_object = {
+      first:null,
+      second:null,
+      operation:null };
 
    // const symbols = ['+','-','/','*','%']
-    let [state,setState] = useState('')
-    state = {
-          a:null,
-          b:null,
-          c:null
-        }
-    
+   calc_object.first = '0'
+    let [state,setState] = useState('');
   
-    
     const handleClick=buttonName=>{
         console.log(buttonName);
         console.log(Calculate('6','7','+'));
@@ -28,7 +26,7 @@ function App() {
         }
         dis += buttonName.toString();
         state = dis
-        setState(state);
+        setState(dis);
         console.log(dis)
        /* if (buttonName in symbols){
 
