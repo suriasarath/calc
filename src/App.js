@@ -33,7 +33,8 @@ function App() {
         state = dis
         setState(dis);
         state = Calculate(calc_object,buttonName);
-        setState(state.first+state.operation+state.second);
+        
+            setState([state.first,state.operation,state.second].join(''));
        /* if (buttonName in symbols){
 
             if(a==''){
