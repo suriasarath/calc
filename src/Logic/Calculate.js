@@ -1,6 +1,6 @@
 
 function isNumber(value){
-    return /[1-9]+/.test(value);
+    return /[0-9]+/.test(value);
 
 }
 function operate(calc_object){
